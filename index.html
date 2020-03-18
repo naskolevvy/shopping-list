@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewpoint" content = "width=device-width ,initial-scale = 1.0">
+	<link href = "styles/page-style.css" rel = "stylesheet"></link>
+</head>
+
+<body>
+	<h1 class = "title">SHOPPING LIST</h1>
+	<div class = "row">
+		<div class ="column">
+			<form id = "shopping_form" class = "shoppingForm" action="JavaScript:shopping()" method "POST">
+				
+				<input id = "name" class = "shoppingInput" type = "text" name = "name" placeholder = "Who has to buy it:" required><br>
+				
+				<input id = "item" class = "shoppingInput" type = "text" name = "item" placeholder = "Enter desired item:" required><br>
+				
+				<input id = "origin" class = "shoppingInput" type = "text" name = "origin" placeholder = "Where to buy it from:" required><br>
+			
+				<input id = "quantity" class = "shoppingInput" type = "number_format" name = "quantity" placeholder = "Enter quantity of the item:" required><br>
+				
+				<input id = "price" class = "shoppingInput" type = "number_format" name = "price" placeholder = "Enter total price:" required ><br>
+				<input id = "submit"  class = "shoppingInput" type= "submit"  value = "Place in list">
+			</form>
+		</div>
+		<div class = "line" ></div>
+		<div class = "column">
+			<table id = "shopping" border = "1"></table>
+		<div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
